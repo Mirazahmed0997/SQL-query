@@ -115,6 +115,25 @@ SELECT * FROM student
     WHERE first_name Ilike 'm%'
 
 
+-- LIMIT & OFFSET 
+
+SELECT *FROM  student 
+        WHERE country  IN ('india','pakistan')LIMIT 5;
+
+-- offset is used to skip data for example : if I used offset 5 it will skip the first 5 row and give rest of the data from database 
+SELECT *FROM  student LIMIT 5 OFFSET 5;
+
+
+-- DELETE
+SELECT *FROM  student
+
+
+DELETE FROM  student 
+    WHERE first_name='Miraz' AND age=29
+
+
+
+
 
 
 
