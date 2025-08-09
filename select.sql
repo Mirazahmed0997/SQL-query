@@ -82,15 +82,46 @@ SELECT COALESCE(email, 'Email not provided') as "Email" FROM student;
 
 SELECT max(LENGTH(first_name)) FROM student;
 
-
-
-
-
 SELECT *FROM student 
     WHERE country != 'Bangladesh'
 
 SELECT *FROM student
     WHERE email is NULL;
+
+
+SELECT *FROM student 
+    WHERE country='pakistan' OR country='india'
+
+SELECT *FROM student 
+    WHERE country  IN ('india','pakistan')
+
+
+SELECT *FROM student 
+    WHERE country NOT IN ('india','pakistan')
+
+
+SELECT *FROM student
+    WHERE dob BETWEEN '1997-01-01' and '2005-01-01' ORDER BY dob;
+
+SELECT * FROM student
+    WHERE first_name like 'M%az'
+
+
+SELECT * FROM student
+    WHERE first_name like '__t_'
+
+
+SELECT * FROM student
+    WHERE first_name Ilike 'm%'
+
+
+
+
+
+
+
+
+
 
 
 
