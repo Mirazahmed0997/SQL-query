@@ -48,6 +48,59 @@ SELECT *FROM student first_name WHERE (country ='pakistan' OR country ='india') 
 SELECT *FROM student WHERE age > 29 AND course = 'CSE';
 
 
+-- fuctions (scalar)
+
+SELECT upper(first_name), * from student;
+
+
+SELECT concat(first_name,' ',last_name),* from student;
+
+
+SELECT length(first_name), *from student;
+
+
+
+
+
+-- fuctions (AGGREGATE)
+
+SELECT avg(age) from student;
+
+
+SELECT MIN(age) from student;
+
+SELECT sum(age) from student;
+
+SELECT count(*) from student;
+
+
+SELECT COALESCE(email, 'Email not provided') as "Email" FROM student;
+
+
+-- combination
+
+
+SELECT max(LENGTH(first_name)) FROM student;
+
+
+
+
+
+SELECT *FROM student 
+    WHERE country != 'Bangladesh'
+
+SELECT *FROM student
+    WHERE email is NULL;
+
+
+
+
+
+
+
+
+
+
 
 
 
