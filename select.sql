@@ -112,7 +112,7 @@ SELECT * FROM student
 
 
 SELECT * FROM student
-    WHERE first_name Ilike 'm%'
+    WHERE first_name Ilike 'M%'
 
 
 -- LIMIT & OFFSET 
@@ -125,11 +125,16 @@ SELECT *FROM  student LIMIT 5 OFFSET 5;
 
 
 -- DELETE
-SELECT *FROM  student
+SELECT *FROM  student 
 
 
 DELETE FROM  student 
     WHERE first_name='Miraz' AND age=29
+
+
+UPDATE  student 
+     SET email='istypartho@gmail.com',country='india'
+     WHERE student_id=2
 
 
 
