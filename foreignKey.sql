@@ -47,7 +47,14 @@ SELECT * FROM post
 
 -- RIGHT JOIN
 SELECT * FROM post 
-   RIGHT JOIN users on post.user_id= users.id 
+   RIGHT JOIN users on post.user_id= users.id
+
+-- FULL JOIN
+
+SELECT * FROM post 
+   FULL JOIN users on post.user_id= users.id
+
+
 
 
 
