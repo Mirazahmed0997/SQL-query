@@ -30,3 +30,5 @@ SELECT extract(MONTH from order_date) as month,count(order_id),sum(total_amount)
     WHERE extract(YEAR from order_date)=2022
     GROUP BY month
 
+
+
