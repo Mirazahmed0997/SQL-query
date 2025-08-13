@@ -40,6 +40,7 @@ ALTER Table post
 SELECT * FROM post 
     JOIN users on post.user_id= users.id 
 
+
 -- LEFT JOIN
 
 SELECT * FROM post 

@@ -15,7 +15,6 @@ SELECT EXTRACT(YEAR FROM dob),COUNT(*) FROM student
     GROUP BY dob
       
 
-CREATE table 
  
 
 
